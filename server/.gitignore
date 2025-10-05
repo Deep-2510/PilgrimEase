@@ -1,0 +1,55 @@
+# Project Specific Ignore Rules
+
+# Server specific
+/server/uploads/
+/server/temp/
+/server/logs/
+/server/.nyc_output/
+
+# Client specific
+/client/.env
+/client/dist/
+/client/.vite/
+/server/.env
+/server/node_modules/
+/client/node_modules/
+# MongoDB data directory
+/data/db/
+/mongo-data/
+
+# SSL certificates
+/ssl/
+/certs/
+
+# Documentation
+/docs/_build/
+
+# Testing
+/coverage/
+/.nyc_output/
+
+# Docker
+docker-compose.override.yml
+
+# Backup files from editors
+*~
+*.swp
+*.swo
+
+# Local configuration files
+config/local.json
+config/local.js
+
+# PM2
+.pm2/
+
+# Database dumps
+*.dump
+*.backup
+
+# ML model files (if any)
+*.model
+*.weights
+*.h5
+*.pkl
+*.node_modules
