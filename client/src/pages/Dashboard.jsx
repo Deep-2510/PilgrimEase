@@ -62,6 +62,7 @@ function Dashboard() {
           </div>
         )}
       </div>
+      
 
       <div className="quick-actions">
         <Link to="/emergency" className="emergency-btn">

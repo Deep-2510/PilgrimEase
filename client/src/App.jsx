@@ -12,7 +12,6 @@ import './index.css';
 
 function App() {
   return (
-    
     <AppProvider>
       <Router>
         <div className="app">
@@ -23,11 +22,6 @@ function App() {
               <Route path="/temple/:id" element={<TempleView />} />
               <Route path="/emergency" element={<Emergency />} />
               <Route path="/profile" element={<Profile />} />
-              <div>
-      <h1>🚀 Temple Crowd Management System</h1>
-      <p>Welcome to the Temple Crowd Management application!</p>
-      <p>If you can see this, React is working correctly.</p>
-    </div>
               <Route path="/admin" element={<Admin />} />
             </Routes>
           </main>
