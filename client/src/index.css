@@ -364,3 +364,156 @@ body {
 .emergency-btn:hover, .admin-btn:hover {
   transform: translateY(-2px);
 }
+/* Emergency Alert Styles */
+.emergency-alert {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.severity-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.severity-critical { background: #fecaca; color: #dc2626; }
+.severity-high { background: #fed7aa; color: #ea580c; }
+.severity-medium { background: #fef08a; color: #ca8a04; }
+.severity-low { background: #dbeafe; color: #1d4ed8; }
+
+/* Emergency Contacts */
+.emergency-contacts {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+/* Temple View Styles */
+.temple-view {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.temple-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temple-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.temple-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-card, .facilities-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.facilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.facility {
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+.live-updates {
+  margin-top: 2rem;
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.update-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.update-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.update-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Footer Styles */
+.footer {
+  background: #1f2937;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+/* Responsive Design for Temple View */
+@media (max-width: 768px) {
+  .temple-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .updates-grid {
+    grid-template-columns: 1fr;
+  }
+}
